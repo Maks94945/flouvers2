@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.product-images {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.product-main-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.product-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    color: #79624f;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2em;
+    color: #79624f;
+    margin-right: 20px;
+}
+
+.shipping {
+    font-size: 1.2em;
+    color: green;
+}
+
+.product-details {
+    margin-bottom: 20px;
+}
+
+.product-options {
+    margin-bottom: 20px;
+}
+
+.product-options select,
+.product-options input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-buttons button {
+    background-color: #79624f;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-buttons button:hover {
+    background-color: #594636;
+}
+
+
+.product-benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -15px;
+}
+
+.product-benefits h3 {
+    color: #79624f;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-benefits ul {
+    list-style: none;
+    color: #79624f;
+}
+
+.product-benefits li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+
+form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #orderMessage {
+    font-size: 18px;
+    font-weight: bold;
+  }

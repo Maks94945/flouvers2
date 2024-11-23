@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мягкие игрушки</title>
+    <link rel="stylesheet" href="podarki.css">
+    <link rel="stylesheet" href="icon.ico">
+</head>
+<body>
+    <section class="product">
+        <div class="product-images">
+            <img src="https://polesie.spb.ru/images/cms/data/1_myagkie_igrushki/78-tp0269a.jpg" class="product-main-image" id="main-product-image">
+        </div>
+    
+        <div class="product-info">
+            <h1>Мягкие игрушки</h1>
+            <div class="product-price">
+                <span class="shipping">Бесплатная доставка</span>
+            </div>
+    
+            <div class="product-details">
+                <p><strong>Код товара:</strong> 4703</p>
+                <p><strong>Доступность:</strong> В наличии</p>
+            </div>
+    
+            <div class="product-options">
+                <label for="rose-color">Игрушки</label>
+                <select id="rose-color">
+                    <option value="mix">Мишка 5000 KZT</option>
+                    <option value="pink">Белка 5000 KZT</option>
+                    <option value="orange">Зайчик 5000 KZT</option>
+                    <option value="white">Собачка 5000 KZT</option>
+                </select>
+                <div class="product-buttons">
+                    <form id="orderForm">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                    
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+                    
+                        <label for="address">Адрес:</label>
+                        <input type="text" id="address" name="address" required><br><br>
+                    <button class="button" onclick="submitOrder()">Оформить заказ</button>
+                </div>
+            </div>
+            </form>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <script>
+    const images = {
+        mix: 'https://polesie.spb.ru/images/cms/data/1_myagkie_igrushki/78-tp0269a.jpg', // Мишка
+        pink: 'https://avatars.mds.yandex.net/i?id=1fea9169190b15e571e729f680fe2709_l-5232236-images-thumbs&n=13', // Белка (замените на правильный путь)
+        orange: 'https://image.made-in-china.com/2f0j00rqtivAPzAKpJ/Big-Feet-Big-Eyes-25cm-Rabbit-Plush-with-Long-Ears-Stuffed-Cute-Bunny-Soft-Toy.jpg', // Зайчик (замените на правильный путь)
+        white: 'https://storage.mrgeek.ru/gq1sxItL28Bx2mXktMw2nGaDMzCZUeYHzGy9nHhyvFc/fit/1080/1080/no/1/aHR0cHM6Ly9tcmdlZWsucnUvaW1hZ2VzL3Byb2R1Y3RfcGljdHVyZXNfbmV3LzYwMDAvNjkwMC82OTk3L3Byb2R1Y3RfcGljdHVyZXMvb3JpZ2luYWwvNjk5Ny0zLmpwZw.jpg'  // Собачка (замените на правильный путь)
+    };
+    
+    // Получаем элементы
+    const selectElement = document.getElementById('rose-color');
+    const imageElement = document.getElementById('main-product-image');
+    
+    // Обработчик события для выбора опции
+    selectElement.addEventListener('change', function() {
+        const selectedValue = selectElement.value;
+        const imageUrl = images[selectedValue];
+    
+        // Обновляем изображение
+        if (imageUrl) {
+            imageElement.src = imageUrl;
+        }
+    });
+    </script>
+</body>
+</html>
